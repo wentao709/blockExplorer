@@ -21,7 +21,8 @@ function App() {
       setBlock(await alchemy.core.getBlock());
     }
     console.log(block);
-    getBlockNumber();
+    const number = getBlockNumber();
+    console.log(number);
   });
 
   return <div className="App">Block Number: {blockNumber}</div>;
